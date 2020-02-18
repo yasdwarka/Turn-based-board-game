@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<meta charset="utf-8">
+	<title>Maps tiles</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>Turn Based Fight Game </h1>
+				<h2 id="welcomeNote">Game Mode on</h2>
+				
+				<h5>'“True courage is in facing danger when you are afraid...” '</h5>
+				
+
+				<div class="playersInfo">
+					<form>
+						<div class="form-group">
+							<label for="text"> Boy Player</label>
+							<input type="text" id="boyplayer"  name="boyplayer" > </div>
+						<div class="form-group">
+							<label for="text">Girl Player</label>
+							<input type="text" id="girlplayer" name="girlplayer" > </div>   
+						</form>
+					<!-- Trigger/Open The Modal -->
+<button id="Btnmodal"> Game Rules </button>
+
+<!-- The Modal -->
+<div id="Modal" class="modal">
+
+  <!-- Modal content -->
+  <div id="content1" class="modal-content">
+      <span  class="close">&times;</span>
+
+    			<div class="modal-body text-center">
+							<p>Begin the battle between two players...</p>
+<p>You can move a maximum of 3 spaces horizontally or vertically.</p>
+<p>You can collect weapons and increase your damage score.</p>
+<p>The aim of the game is to gain a high weapon damage score and attack the other player.</p>
+<p>Once you are next to them you can attack or defend.</p>
+<p>Good Luck!</p>
+	  </div>
+					<button onclick="startGame()" class="btn"> Enter Game </button> 
+							</div>
+			</div>
+				</div>
+		
+		<div id="infor" class="bg-danger p-1"><p>Battle begins</p></div>
+				<div id="gameover" class="bg-success"></div>
+		
+		
+		<div class="row game">
+			<div class="row">
+		
+			<div class="col-sm-2 text-center bg-light left">
+			
+				<p><span class="boyplayer intro"></span><span id="playerOne"></span></p>
+				<button class="btn btn-danger btn-lg" onclick="attack(1)">Attack</button>
+				<button  class="btn btn-success btn-lg" onclick="defend(1)">Defend</button>
+			</div>
+			<div class="col-sm-7 text-center ">
+							<table id="board" class="table table-bordered">       
+								</table>
+				</div>
+	
+			<div class="col-sm-2  text-center bg-light right ">
+				<p><span class="girlplayer intro"></span><span id="playerTwo"></span></p>
+				<button class="btn btn-danger btn-lg" onclick="attack(2)">Attack</button>
+				<button class="btn btn-success btn-lg" onclick="defend(2)">Defend</button>
+			</div>
+			<div class="col-xs-12 mt-1">
+				<button onclick="location.reload();"class="btn"> Reset Game </button>
+		</div>
+			</div>
+		</div>
+			
+	
+	<script type="text/javascript" src="main.js"></script>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

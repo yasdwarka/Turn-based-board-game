@@ -1,0 +1,196 @@
+
+#board td {
+	width: 60px;
+	min-width: 68px;
+	height: 60px;
+	cursor: pointer;
+	border: 2px solid green;
+	 justify-content : center; 
+}
+
+#board{
+	width:50px;
+	height:50px;
+}
+
+#board td.bg-muted {
+	background-color: saddlebrown;
+	cursor: not-allowed;
+	
+}
+
+.weapon-stats {
+    position: absolute;
+    transform: rotate(20deg);
+    z-index: 2;
+    top: 1rem;
+    left: 2rem;
+    width: 2.8rem;
+    height: 2.8rem;
+}
+.player-stats {
+    position: relative;
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+}
+p{
+	font-size: 18px;
+	font-weight: 600;
+	text-emphasis-color:antiquewhite;
+}
+
+.btn{
+	margin-bottom: 20px !important;
+    background: #FFC300;
+}
+.container{
+	background-image: url(img/download1.jpg);
+}
+.container h1{
+	font-size:30px;
+	color:rosybrown;
+	padding-left: 450px;
+	font-family:'Playfair Display',Montserrat,sans-serif;
+	
+}
+.container h5{
+	font-family:cursive;
+	padding-left: 120px;
+	color: azure;
+	
+}
+.container h2{
+	color: azure;
+}
+
+#infor p{
+	margin: 0;
+	
+}
+span.intro.boyplayer,
+span.intro.girlplayer {
+	width: 90px;
+	height:90px;
+	display: inline-block;
+	background-size: 50px;
+	
+	
+}
+
+span.intro {
+	vertical-align: middle;
+	
+}
+* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  right : 15px;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: black ;/* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 60px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.modal-content span.close{
+  color: red;
+  float: right;
+  font-size: 30px;
+  font-weight: bolder;
+}
+ .span.close:hover{
+  color: red;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.boyplayer {
+	background: url(img/boymario.png) center center no-repeat azure;
+	background-size: 50px;
+}
+body label{
+	color:#f5f5f5;
+}
+.girlplayer {
+	background: url(img/girl.jpg) center center no-repeat azure;
+	background-size: 50px;
+}
+.weapon {
+    position: absolute;
+    transform: rotate(20deg);
+    z-index: 3;
+    top: 13px;
+    left: 11px;
+    width: 28px;
+    height: 28px;
+}
+.player {
+    position: relative;
+     top: 4px;
+    width: 40px;
+    height: 40px;
+}
+
+
+.axe {
+	background: url(img/axe.jpg) center center no-repeat ;
+	background-size: 50px;
+}
+
+.bat {
+	background: url(img/bat.jpg) center center no-repeat  ;
+	background-size: 50px;
+}
+
+.shield {
+	background: url(img/shield.jpg) center center no-repeat  ;
+	background-size: 50px;
+}
+
+.whip {
+	background: url(img/whip.jpg) center center no-repeat;
+	background-size: 50px;
+}
+.game {
+	display: none;
+	background-color:azure;
+}
+#infor,
+#gameover{
+	text-align: center;
+	padding: 20px;
+	position: absolute;
+	top:40%;
+	right: 25%;
+	left:20%;
+	font-weight: bold;
+	display: none;
+	color: red;
+	z-index:100;
+	
+}
+#infor p{
+	margin: 0;
+}
+.game-info{
+	display: flex;
+	justify-content:center;
+	margin:5rem auto;
+	color:#cc9543;
+	font-size:20px;
+}
+
